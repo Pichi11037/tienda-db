@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Proyecto</title>
+<h1>Administracion de la compañia</h1>
+<link rel="stylesheet" type="text/css"  href="style.css">
+<script type = "text/javascript" src = "scriptproy.js"></script>
+</head>
+
+<body>
+<h3>Empleado</h3>
+Documento de identificacion:<input type="number" id="id"><br>
+Nombre:<input type="text" id="nombre"><br>
+Cargo:<input type="text" id="cargo"><br>
+Habilidades:<input type="text" id="habilidades"><br><br>
+<input type="button" value="Adicionar empleado" id="13" onclick="guardarEmpleado()">
+<input type="button" value="Buscar empleado(codigo)" id="14" onclick="mostrarEmpleados()"><br><br>
+<h3>Proyecto</h3>
+Codigo:<input type="number" id="codigo"><br>
+Nombre:<input type="text" id="nombreproy"><br>
+Tiempo(semanas):<input type="number" id="tiempo"><br>
+Plataformas:<input type="text" id="plataformas"><br><br>
+<input type="button" value="Adicionar proyecto" id="15" onclick="guardarProyecto()">
+<input type="button" value="Buscar proyecto(codigo)" id="16" onclick="mostrarProyecto()"><br><br>
+<h3>Relaciones</h3>
+Documento de identificacion:<input type="number" id="documentempl"><br>
+Codigo del proyecto:<input type="text" id="codigopro"><br>
+Horas asignadas:<input type="number" id="horasasign"><br>
+Dias asignados:<input type="number" id="diasasign"><br>
+Responsabilidades:<input type="text" id="responsabilidades"><br><br>
+<input type="button" value="Asignar empleado" id="17" onclick="guardarRelaciones()">
+<input type="button" value="Buscar empleados de un proyecto(codigo proyecto)" id="18" onclick="mostrarEmpldeunProy()">
+<input type="button" value="Buscar proyectos de un empleado(id empleado)" id="19" onclick="mostrarProydeunEmpl()">
+<input type="button" value="Buscar horas asignadas de cada empleado" id="20" onclick="guardahoras()"><br><br>
+
+<text id="resultado">
+</body>
+</html>
