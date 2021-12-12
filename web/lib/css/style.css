@@ -1,0 +1,12 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+.card-header{
+    height: 10em;
+    width: 10em;
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
